@@ -1,4 +1,3 @@
-'''
 print("hello world")
 
 a=1
@@ -261,7 +260,7 @@ def isPrime(x):
 
 print(isPrime(13))
 print(isPrime(14))
-'''
+
 
 def plus_one(x):
     return x+1
