@@ -9,10 +9,11 @@ for i in range(1,6):
         total+= a[i]
     average = round(total/n)
     '''
-    average = round(sum(a)/n)
+    average = int(sum(a)/n + 0.5) 
+    #round는 round_half_even 방식을 따르므로 이렇게 반올림하는 것이 안전
 
     a=list(map(lambda x:x-average, a))
-    smallest=float('inf')
+    smallest=a[0]
     index = 0
     for i in range(n):
         if abs(a[i]) < abs(smallest):
