@@ -5,13 +5,16 @@ for i in range(1,6):
     a=list(map(int,input().split()))
     def digit_sum(x):
         total = 0
-        while True:
+        while x>0:
             total += x%10
             x=x//10
-            if(x<10):
-                break
-        total += x
         return total
+        
+    def digit_sum_ver2(x):
+        sum=0
+        for i in str(x):
+            sum+=int(i)
+        return sum
     
     result=list(map(digit_sum,a))
 
