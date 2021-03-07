@@ -1,5 +1,5 @@
 import sys
-from collections import deque
+
 def DFS(x_now, y_now):
   global count
   if x_now == 6 and y_now == 6:
