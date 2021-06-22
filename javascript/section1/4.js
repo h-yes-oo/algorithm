@@ -1,19 +1,9 @@
-const fs = require('fs');
-let input = fs.readFileSync('/dev/stdin').toString().split(' ');
-let a = parseInt(input[0]);
-let b = parseInt(input[1]);
-let c = parseInt(input[2]);
+const fs = require("fs");
+const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+const a = parseInt(input[0]);
 
-function solution(a,b,c){
-  //find max
-  let max;
-  if(a>b) { max = a; }
-  else { max = b; }
-  if( c > max ) { max = c;}
-
-  let sum = a + b + c;
-  if((sum - max) <= max ) return("NO");
-  else return("YES");
+let sol = 0;
+for(let i = 1; i <= a; i++){
+  sol += i;
 }
-
-console.log(solution(a,b,c));
+console.log(sol);
