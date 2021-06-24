@@ -13,3 +13,4 @@ for(let i = 0; i < odd.length; i++){
 
 console.log(sum);
 console.log(min);
+console.log(Math.min(...odd));
