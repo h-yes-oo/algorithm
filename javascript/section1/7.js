@@ -8,8 +8,8 @@ const cars = second.map(x => Number(x));
 
 function solution(day, cars){
   let sol = 0;
-  for(let i = 0; i < 7; i++){
-    if(cars[i] % 10 === day ){
+  for(let car of cars){
+    if(car % 10 === day ){
       sol += 1;
     }
   }
