@@ -8,6 +8,7 @@ function solution(harr){
   for(let i = 0; i < 9; i++){
     for(let j = i + 1; j < 9; j++) {
       if(harr[i] + harr[j] === sum){
+        //index가 당겨 지는 것을 고려하여 뒤의 원소 먼저 지운다 중요 
         harr.splice(j, 1);
         harr.splice(i, 1);
         return harr;
